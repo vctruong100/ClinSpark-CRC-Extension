@@ -1,0 +1,33 @@
+Chrome Web Store Publication Notes - ClinSpark CRC Automator
+
+Single purpose
+Provides CRC workflow automation for authorized ClinSpark test-site users.
+
+Host permission justification
+- https://cenexeltest.clinspark.com/*: inject the CRC content script and access
+  the current ClinSpark test environment.
+- https://cenexel.clinspark.com/*: support CRC features that read production
+  library data.
+- https://act-master-schedule.onrender.com/*: retrieve the read-only ACT Method
+  Library projection through a credential-free GET request.
+
+The extension does not request access to unrelated sites or broad URL patterns.
+It requests no Chrome API permissions such as tabs, storage, scripting,
+downloads, identity, or cookies.
+
+Remote code
+All executable code is packaged with the extension. The extension does not
+download or execute remote code.
+
+Data use
+The extension does not collect or share user data with the developer. See
+PRIVACY_POLICY.md for details.
+
+Version
+1.0.0
+
+Upload package
+release/ClinSpark CRC Automator 1.0.0.zip
+
+Before uploading a future release, increment manifest.json's version, rebuild
+the ZIP, and upload it to the intended Chrome Web Store listing.
