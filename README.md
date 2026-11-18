@@ -11,6 +11,7 @@ ClinSpark test-site workflows. The content script runs only on
 - `method-library-worker.js`: credential-free read-only Method Library request handler.
 - `icons/`: Chrome extension icons.
 - `PRIVACY_POLICY.md`: extension privacy policy.
+- `docs/privacy-policy.html`: standalone HTML policy page for GitHub Pages.
 - `NOTES.txt`: Chrome Web Store permission and publication notes.
 
 ## Local installation
@@ -19,6 +20,20 @@ ClinSpark test-site workflows. The content script runs only on
 2. Enable **Developer mode**.
 3. Select **Load unpacked** and choose this project folder.
 4. Visit an authorized ClinSpark CRC site.
+
+## Publish the privacy policy
+
+The policy source is `PRIVACY_POLICY.md`; the matching static web page is
+`docs/privacy-policy.html`. To publish it with GitHub Pages:
+
+1. Push these files to the repository's `main` branch.
+2. In GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**, select
+   `main` and `/docs`, then click **Save**.
+4. Wait for GitHub Pages to finish deploying, then verify the page opens
+   publicly at:
+   `https://vctruong100.github.io/ClinSpark-CRC-Extension/privacy-policy.html`
+5. Enter that URL in the Chrome Web Store listing's privacy policy field.
 
 ## Chrome Web Store release
 

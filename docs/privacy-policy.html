@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the ClinSpark CRC Automator Chrome extension.">
+  <meta name="color-scheme" content="light">
+  <title>Privacy Policy | ClinSpark CRC Automator</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1e302b;
+      --muted: #53655e;
+      --paper: #f4f2e9;
+      --card: #fffefa;
+      --green: #275848;
+      --line: #d9dfd6;
+      --accent: #c56b3d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 90% 5%, rgba(197, 107, 61, .11), transparent 27rem),
+        linear-gradient(145deg, #f4f2e9, #e9efe8);
+      color: var(--ink);
+      font: 16px/1.7 Georgia, "Times New Roman", serif;
+    }
+
+    .page {
+      width: min(100% - 2rem, 780px);
+      margin: 5rem auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 .8rem;
+      color: var(--green);
+      font: 700 .76rem/1.4 "Segoe UI", Arial, sans-serif;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    article {
+      padding: clamp(1.5rem, 6vw, 4rem);
+      border: 1px solid rgba(39, 88, 72, .12);
+      border-radius: 1.25rem;
+      background: var(--card);
+      box-shadow: 0 1.5rem 4rem rgba(30, 48, 43, .09);
+    }
+
+    h1, h2 {
+      color: var(--ink);
+      font-weight: 500;
+      line-height: 1.15;
+    }
+
+    h1 {
+      max-width: 12ch;
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 4.6rem);
+      letter-spacing: -.045em;
+    }
+
+    .effective-date {
+      margin: 1.1rem 0 2.5rem;
+      color: var(--muted);
+      font: 500 .92rem/1.5 "Segoe UI", Arial, sans-serif;
+    }
+
+    .intro {
+      margin: 0 0 2rem;
+      padding-left: 1.25rem;
+      border-left: 3px solid var(--accent);
+      color: var(--green);
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding-top: 1.35rem;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 .65rem;
+      font-size: 1.45rem;
+    }
+
+    p { margin: 0 0 1rem; }
+    p:last-child { margin-bottom: 0; }
+
+    a {
+      color: var(--green);
+      text-decoration-thickness: .08em;
+      text-underline-offset: .18em;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover { color: var(--accent); }
+
+    .sections {
+      display: grid;
+      gap: 1.7rem;
+    }
+
+    footer {
+      padding: 1.25rem .25rem 0;
+      color: var(--muted);
+      font: .82rem/1.5 "Segoe UI", Arial, sans-serif;
+    }
+
+    @media (max-width: 520px) {
+      .page { margin: 1.25rem auto; }
+      article { border-radius: .8rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <p class="eyebrow">ClinSpark CRC Automator</p>
+    <article>
+      <header>
+        <h1>Privacy policy</h1>
+        <p class="effective-date">Effective November 18, 2026</p>
+      </header>
+
+      <p class="intro">
+        ClinSpark CRC Automator runs workflow automation in the user's browser
+        on the authorized ClinSpark CRC environment.
+      </p>
+
+      <div class="sections">
+        <section>
+          <h2>Where the extension runs</h2>
+          <p>
+            The extension injects its content script only on
+            <a href="https://cenexeltest.clinspark.com/">cenexeltest.clinspark.com</a>.
+            It also has host access to
+            <a href="https://cenexel.clinspark.com/">cenexel.clinspark.com</a>
+            for CRC features that read production library data and to
+            <a href="https://act-master-schedule.onrender.com/">act-master-schedule.onrender.com</a>
+            for the Method Library.
+          </p>
+        </section>
+
+        <section>
+          <h2>Data handling</h2>
+          <p>
+            The extension does not collect, sell, or share user data with the
+            developer. Its content script interacts with ClinSpark pages using
+            the user's active browser session. ClinSpark requests and records
+            are handled by the ClinSpark application, not sent to the extension
+            developer.
+          </p>
+          <p>
+            The Method Library feature makes an anonymous, credential-free GET
+            request to the ACT Master Schedule Method Library endpoint. The
+            request does not include ClinSpark page data, account identifiers,
+            or authentication cookies. The response contains method names,
+            categories, and expressions only.
+          </p>
+        </section>
+
+        <section>
+          <h2>Storage</h2>
+          <p>
+            Automation state and interface preferences may be stored locally
+            in the browser's site storage. The extension does not transmit this
+            local storage to the developer.
+          </p>
+        </section>
+
+        <section>
+          <h2>Remote code</h2>
+          <p>
+            The extension does not download or execute remote code. Extension
+            code is included in the package and updates are distributed through
+            the Chrome Web Store.
+          </p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <p>
+            For questions, contact the extension owner or administrator
+            responsible for the Chrome Web Store listing.
+          </p>
+        </section>
+      </div>
+    </article>
+    <footer>ClinSpark CRC Automator · Privacy information</footer>
+  </main>
+</body>
+</html>
