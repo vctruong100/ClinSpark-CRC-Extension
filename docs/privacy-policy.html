@@ -7,189 +7,124 @@
   <meta name="color-scheme" content="light">
   <title>Privacy Policy | ClinSpark CRC Automator</title>
   <style>
-    :root {
-      color-scheme: light;
-      --ink: #1e302b;
-      --muted: #53655e;
-      --paper: #f4f2e9;
-      --card: #fffefa;
-      --green: #275848;
-      --line: #d9dfd6;
-      --accent: #c56b3d;
-    }
-
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background:
-        radial-gradient(ellipse at 90% 5%, rgba(197, 107, 61, .11), transparent 27rem),
-        linear-gradient(145deg, #f4f2e9, #e9efe8);
-      color: var(--ink);
-      font: 16px/1.7 Georgia, "Times New Roman", serif;
+      background: #fff;
+      color: #1f2328;
+      font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
 
-    .page {
-      width: min(100% - 2rem, 780px);
-      margin: 5rem auto;
+    .container-lg {
+      max-width: 1012px;
+      margin-right: auto;
+      margin-left: auto;
     }
 
-    .eyebrow {
-      margin: 0 0 .8rem;
-      color: var(--green);
-      font: 700 .76rem/1.4 "Segoe UI", Arial, sans-serif;
-      letter-spacing: .15em;
-      text-transform: uppercase;
+    .px-3 { padding-right: 16px; padding-left: 16px; }
+    .my-5 { margin-top: 32px; margin-bottom: 32px; }
+
+    .markdown-body {
+      font-size: 16px;
+      line-height: 1.5;
+      overflow-wrap: break-word;
     }
 
-    article {
-      padding: clamp(1.5rem, 6vw, 4rem);
-      border: 1px solid rgba(39, 88, 72, .12);
-      border-radius: 1.25rem;
-      background: var(--card);
-      box-shadow: 0 1.5rem 4rem rgba(30, 48, 43, .09);
+    .markdown-body h1,
+    .markdown-body h2 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
     }
 
-    h1, h2 {
-      color: var(--ink);
-      font-weight: 500;
-      line-height: 1.15;
+    .markdown-body h1 {
+      padding-bottom: .3em;
+      border-bottom: 1px solid #d1d9e0;
+      font-size: 2em;
     }
 
-    h1 {
-      max-width: 12ch;
-      margin: 0;
-      font-size: clamp(2.5rem, 7vw, 4.6rem);
-      letter-spacing: -.045em;
+    .markdown-body h2 {
+      padding-bottom: .3em;
+      border-bottom: 1px solid #d1d9e0;
+      font-size: 1.5em;
     }
 
-    .effective-date {
-      margin: 1.1rem 0 2.5rem;
-      color: var(--muted);
-      font: 500 .92rem/1.5 "Segoe UI", Arial, sans-serif;
+    .markdown-body p,
+    .markdown-body ul {
+      margin-top: 0;
+      margin-bottom: 16px;
     }
 
-    .intro {
-      margin: 0 0 2rem;
-      padding-left: 1.25rem;
-      border-left: 3px solid var(--accent);
-      color: var(--green);
-      font-size: 1.2rem;
+    .markdown-body ul { padding-left: 2em; }
+
+    .markdown-body a {
+      color: #0969da;
+      text-decoration: none;
     }
 
-    section {
-      padding-top: 1.35rem;
-      border-top: 1px solid var(--line);
+    .markdown-body a:hover { text-decoration: underline; }
+
+    .markdown-body code {
+      padding: .2em .4em;
+      border-radius: 6px;
+      background: rgba(175, 184, 193, .2);
+      font: .85em ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace;
     }
 
-    h2 {
-      margin: 0 0 .65rem;
-      font-size: 1.45rem;
+    .heading-anchor {
+      padding-left: .375em;
+      color: #0969da;
+      font-size: .8em;
+      visibility: hidden;
     }
 
-    p { margin: 0 0 1rem; }
-    p:last-child { margin-bottom: 0; }
+    h2:hover .heading-anchor,
+    .heading-anchor:focus { visibility: visible; }
 
-    a {
-      color: var(--green);
-      text-decoration-thickness: .08em;
-      text-underline-offset: .18em;
-      overflow-wrap: anywhere;
-    }
-
-    a:hover { color: var(--accent); }
-
-    .sections {
-      display: grid;
-      gap: 1.7rem;
-    }
-
-    footer {
-      padding: 1.25rem .25rem 0;
-      color: var(--muted);
-      font: .82rem/1.5 "Segoe UI", Arial, sans-serif;
-    }
-
-    @media (max-width: 520px) {
-      .page { margin: 1.25rem auto; }
-      article { border-radius: .8rem; }
+    @media (max-width: 767px) {
+      .my-5 { margin-top: 24px; margin-bottom: 24px; }
     }
   </style>
 </head>
 <body>
-  <main class="page">
-    <p class="eyebrow">ClinSpark CRC Automator</p>
-    <article>
-      <header>
-        <h1>Privacy policy</h1>
-        <p class="effective-date">Effective November 18, 2026</p>
-      </header>
+  <main class="container-lg px-3 my-5 markdown-body">
+    <h1><a href="https://vctruong100.github.io/ClinSpark-Extension/">ClinSpark-Extension</a></h1>
 
-      <p class="intro">
-        ClinSpark CRC Automator runs workflow automation in the user's browser
-        on the authorized ClinSpark CRC environment.
-      </p>
+    <h1 id="privacy-policy-for-clinspark-crc-automator">Privacy Policy for ClinSpark CRC Automator</h1>
 
-      <div class="sections">
-        <section>
-          <h2>Where the extension runs</h2>
-          <p>
-            The extension injects its content script only on
-            <a href="https://cenexeltest.clinspark.com/">cenexeltest.clinspark.com</a>.
-            It also has host access to
-            <a href="https://cenexel.clinspark.com/">cenexel.clinspark.com</a>
-            for CRC features that read production library data and to
-            <a href="https://act-master-schedule.onrender.com/">act-master-schedule.onrender.com</a>
-            for the Method Library.
-          </p>
-        </section>
+    <p>Effective date: November 18, 2026</p>
 
-        <section>
-          <h2>Data handling</h2>
-          <p>
-            The extension does not collect, sell, or share user data with the
-            developer. Its content script interacts with ClinSpark pages using
-            the user's active browser session. ClinSpark requests and records
-            are handled by the ClinSpark application, not sent to the extension
-            developer.
-          </p>
-          <p>
-            The Method Library feature makes an anonymous, credential-free GET
-            request to the ACT Master Schedule Method Library endpoint. The
-            request does not include ClinSpark page data, account identifiers,
-            or authentication cookies. The response contains method names,
-            categories, and expressions only.
-          </p>
-        </section>
+    <p>ClinSpark CRC Automator runs workflow automation in the user's browser on the authorized ClinSpark CRC environment.</p>
 
-        <section>
-          <h2>Storage</h2>
-          <p>
-            Automation state and interface preferences may be stored locally
-            in the browser's site storage. The extension does not transmit this
-            local storage to the developer.
-          </p>
-        </section>
+    <h2 id="data-collection">Data Collection<a class="heading-anchor" href="#data-collection" aria-label="Link to Data Collection">¶</a></h2>
 
-        <section>
-          <h2>Remote code</h2>
-          <p>
-            The extension does not download or execute remote code. Extension
-            code is included in the package and updates are distributed through
-            the Chrome Web Store.
-          </p>
-        </section>
+    <p>The extension does not collect, sell, or share user data with the developer. Its content script interacts with ClinSpark pages using the user's active browser session. ClinSpark requests and records are handled by the ClinSpark application, not sent to the extension developer.</p>
 
-        <section>
-          <h2>Contact</h2>
-          <p>
-            For questions, contact the extension owner or administrator
-            responsible for the Chrome Web Store listing.
-          </p>
-        </section>
-      </div>
-    </article>
-    <footer>ClinSpark CRC Automator · Privacy information</footer>
+    <h2 id="local-browser-activity">Local Browser Activity<a class="heading-anchor" href="#local-browser-activity" aria-label="Link to Local Browser Activity">¶</a></h2>
+
+    <p>The extension injects its content script only on this ClinSpark domain:</p>
+
+    <ul>
+      <li><code>https://cenexeltest.clinspark.com/*</code></li>
+    </ul>
+
+    <p>It also has host access to <code>https://cenexel.clinspark.com/*</code> for CRC features that read production library data and to <code>https://act-master-schedule.onrender.com/*</code> for the Method Library.</p>
+
+    <p>The Method Library feature makes an anonymous, credential-free GET request to the ACT Master Schedule Method Library endpoint. It receives method names, categories, and expressions only. It does not send ClinSpark page data, account identifiers, or authentication cookies.</p>
+
+    <h2 id="remote-code">Remote Code<a class="heading-anchor" href="#remote-code" aria-label="Link to Remote Code">¶</a></h2>
+
+    <p>The extension does not download or execute remote code. Extension code is included in the package and updates are distributed through the Chrome Web Store.</p>
+
+    <h2 id="data-storage">Data Storage<a class="heading-anchor" href="#data-storage" aria-label="Link to Data Storage">¶</a></h2>
+
+    <p>Automation state and interface preferences may be stored locally in the browser's site storage. The extension does not transmit this local storage to the developer.</p>
+
+    <h2 id="contact">Contact<a class="heading-anchor" href="#contact" aria-label="Link to Contact">¶</a></h2>
+
+    <p>For questions, contact the extension owner or administrator responsible for the Chrome Web Store listing.</p>
   </main>
 </body>
 </html>
